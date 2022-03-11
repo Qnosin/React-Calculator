@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import  { useState } from 'react';
+import ButtonContent from './components/ButtonContent';
+import Window from './components/Window';
 function App() {
+  const [result,setResult] = useState([]);
+  const [isSum,setisSum] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='content'>
+            <Window setResult={setResult} result={result} ></Window>
+            <ButtonContent isSum={isSum} setisSum={setisSum} result={result} setResult={setResult}></ButtonContent>
+        </div>
     </div>
   );
 }

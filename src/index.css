@@ -1,13 +1,99 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-box-shadow: -1px -1px 31px -12px rgba(255, 255, 255, 1);
+  -moz-box-shadow: -1px -1px 31px -12px rgba(255, 255, 255, 1);
+  box-shadow: -1px -1px 31px -12px rgba(255, 255, 255, 1);
+  border-radius: 20px;
+}
+.Window{
+  width: 100%;
+  height: 200px;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+}
+.container{
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button{
+  width: calc(100% / 5);
+  height: 50px;
+  background-color: #ABABAB;
+  display: inline-block;
+  margin-right: 10px;
+  color: #1b0920;
+  font-weight: 600;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.line{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.clear{
+  width: calc(87% * 3/4);
+  margin-right: 10px;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white ;
+  font-size: 1.2rem;
+}
+.final{
+  width: 95%;
+  justify-content: flex-end;
+}
+
+
+@media screen and (min-width:471px) {
+  .content{
+    max-width: 471px;
+  }
+  h3{
+    font-size: 2.5rem;
+  }
+  
+}
+
+@media screen and (max-width:469px){
+  h3{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:375px){
+  .sum{
+    margin-right: 5px;
+  }
 }
