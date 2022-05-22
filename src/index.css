@@ -5,11 +5,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .App{
+  min-height: 100vh;
+}
+.calculator-content{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: black;
+  min-height: 100vh;
+  background-color: #2b2b2b;
 }
 .content{
   width: 100%;
@@ -17,35 +20,38 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  -webkit-box-shadow: -1px -1px 31px -12px rgba(255, 255, 255, 1);
-  -moz-box-shadow: -1px -1px 31px -12px rgba(255, 255, 255, 1);
-  box-shadow: -1px -1px 31px -12px rgba(255, 255, 255, 1);
   border-radius: 20px;
 }
 .Window{
-  width: 100%;
+  width: 90%;
   height: 200px;
-  color: white;
+  color: #c3f1db;
   font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding:10px;
   text-align: center;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .container{
-  width: 100%;
+  width: 90%;
   height: fit-content;
   padding: 10px;
+  background-color: #333333;
+  border-radius: 10px;
 }
 
 .button{
-  width: calc(100% / 5);
+  width: calc(100% / 6);
   height: 50px;
-  background-color: #ABABAB;
+  background-color: #666666;
   display: inline-block;
   margin-right: 10px;
-  color: #1b0920;
+  color: #c4c4c4;
   font-weight: 600;
 }
 .button{
@@ -53,7 +59,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 .line{
   display: flex;
@@ -62,23 +68,70 @@
   width: 100%;
 }
 .clear{
-  width: calc(87% * 3/4);
-  margin-right: 10px;
+  width: calc(100% / 6);
   outline: none;
-  border-radius: 20px;
+  border-radius: 40px;
+  background-color: #666666;
   cursor: pointer;
-  background-color: white ;
   font-size: 1.2rem;
+  margin-right: 10px;
+  color: #c4c4c4;
 }
 .final{
-  width: 95%;
-  justify-content: flex-end;
+  width: 100%;
+  justify-content: center;
 }
+.plus{
+  height: 100px;
+}
+
+/* Hamburger menu */
+.Hamburger-menu{
+  min-height: 100vh;
+  background-color: #666666;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transition: 1s ease;
+}
+.hamburger-open{
+  max-width: 70px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  background-color: #666666;
+  z-index: 999;
+}
+.hamburger-close{
+  max-width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.list-content{
+  font-size: 2rem;
+}
+.Hamburger-menu ul li{
+  list-style-type: none;
+  color: #c3f1db;
+  padding: 10px;
+}
+.Hamburger-menu ul li:hover{
+  text-decoration: underline ;
+  cursor: pointer;
+}
+
 
 
 @media screen and (min-width:471px) {
   .content{
-    max-width: 471px;
+    max-width: 355px;
   }
   h3{
     font-size: 2.5rem;
@@ -89,6 +142,9 @@
 @media screen and (max-width:469px){
   h3{
     font-size: 2rem;
+  }
+  .Hamburger-menu{
+    width: 100%;
   }
 }
 

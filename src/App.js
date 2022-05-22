@@ -1,15 +1,19 @@
 import  { useState } from 'react';
-import ButtonContent from './components/ButtonContent';
-import Window from './components/Window';
+import Calculator from './pages/Calculator';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import Home from './pages/Home';
+
+
 function App() {
-  const [result,setResult] = useState([]);
-  const [isSum,setisSum] = useState(false);
+  const [isOpen,setisOpen] = useState(false);
   return (
     <div className="App">
-        <div className='content'>
-            <Window setResult={setResult} result={result} ></Window>
-            <ButtonContent isSum={isSum} setisSum={setisSum} result={result} setResult={setResult}></ButtonContent>
-        </div>
+      <Router>
+        <Routes>
+          <Route path='/calculator' element={<Calculator isOpen={isOpen} setisOpen={setisOpen}></Calculator>}></Route>
+          <Route path='/' element={<Home></Home>}></Route>  
+        </Routes>
+      </Router>
     </div>
   );
 }
