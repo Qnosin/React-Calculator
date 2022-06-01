@@ -1,6 +1,6 @@
 import React from 'react'
-import Author from '../image/author.png'
-import App from '../image/app.png'
+import Author from '../image/author.png';
+import App from '../image/app.png';
 import { useNavigate } from "react-router-dom";
 
 function HomeContent() {
