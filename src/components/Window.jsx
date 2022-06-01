@@ -2,7 +2,9 @@ const Window = ({result,isSum}) => {
     let sum = -1
     if(isSum === true){
         try{
+            // eslint-disable-next-line no-eval
             console.log(eval(result.join("")))
+            // eslint-disable-next-line no-eval
             sum = eval(result.join(""))
 
         }catch(err){
