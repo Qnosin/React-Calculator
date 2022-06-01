@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import Me from '../image/linkedin_profile_image.png';
 import Linkedind from '../image/linkedin-icon.svg';
 import Github from '../image/github-icon.svg';
-import AuthorCss from '../author.css';
+import '../author.css';
 import HamburgerMenu from '../components/HamburgerMenu';
 import OpenHamburger from '../image/hamburger-menu-open.png';
 import CloseHamburger from '../image/hamburger-close.webp';
@@ -22,7 +22,7 @@ function Author({isOpen,setisOpen}) {
       <>
       <Navbar />
     <section className='Wrapper'>
-        {isOpen === false ? <img className='hamburger-open' src={OpenHamburger} onClick={hamburgerHandle}></img> :  <img className='hamburger-open' src={CloseHamburger} onClick={hamburgerHandle}></img>}
+        {isOpen === false ? <img alt='hamburger-open' className='hamburger-open' src={OpenHamburger} onClick={hamburgerHandle}></img> :  <img alt='hamburger-close' className='hamburger-open' src={CloseHamburger} onClick={hamburgerHandle}></img>}
         {isOpen && <HamburgerMenu></HamburgerMenu>}
         <div className='image'>
         <h1>App is created by:</h1>

@@ -7,7 +7,7 @@ function ErrorPage() {
         setTimeout(()=>{
             navigate('/');
         },2000)
-    },[])
+    },[navigate])
   return (
       <>
       <Navbar/>

@@ -15,7 +15,7 @@ function Calculator({isOpen,setisOpen}) {
       }
   return (
     <div className='calculator-content'>
-    {isOpen === false ? <img className='hamburger-open' src={OpenHamburger} onClick={hamburgerHandle}></img> :  <img className='hamburger-open' src={CloseHamburger} onClick={hamburgerHandle}></img>}
+    {isOpen === false ? <img alt='hamburger-open' className='hamburger-open' src={OpenHamburger} onClick={hamburgerHandle}></img> :  <img  alt='hamburger-close' className='hamburger-open' src={CloseHamburger} onClick={hamburgerHandle}></img>}
     {isOpen && <HamburgerMenu></HamburgerMenu>}
       <div className='content'>
           <Window  result={result} isSum={isSum} ></Window>
