@@ -34,7 +34,7 @@ function Author({isOpen,setisOpen}) {
         <img onClick={handlegit} src={Github} alt='Github'></img><span>/Qnosin</span>
         </div>
         <div className='small__screen__navigation'>
-            <Link to={'/home'}>Home</Link>
+            <Link to={'/'}>Home</Link>
             <Link to={'/calculator'}>App</Link>
         </div>
     </section>
