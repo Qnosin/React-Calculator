@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .homeimg:hover{
     cursor: pointer;
@@ -95,6 +96,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
 .App-demo{
     height: fit-content;
@@ -102,7 +105,13 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
 }
+.home__content h2{
+    font-size: 2rem;
+    border-bottom: 5px solid #fffb08;
+}
+
 
 @media screen and (min-width:1024px){
     .home__content{

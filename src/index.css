@@ -44,6 +44,11 @@
   background-color: #333333;
   border-radius: 10px;
 }
+.errorText{
+  text-align: center;
+  font-size: 2rem;
+
+}
 
 .button{
   width: calc(100% / 6);

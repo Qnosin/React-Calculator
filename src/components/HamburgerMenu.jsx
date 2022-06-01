@@ -7,7 +7,7 @@ function HamburgerMenu() {
         <div className='list-content'>
         <ul>
           <li onClick={()=>navigate('/')}>Home</li>
-          <li onClick={()=>navigate('/app-info')}>App info</li>
+          <li onClick={()=>navigate('/calculator')}>App</li>
           <li onClick={()=>navigate('/author')}>Author</li>
         </ul>
         </div>
